@@ -7,11 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/animation.css">
-    <title>佳佳圣诞快乐</title>
-    <style id="styleTag"></style>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>圣诞快乐</title>
+    <style id="styleTag">
+     
+    </style>
 </head>
 
 <body>
+    <h1 class="zhufu" style="text-align: center; color: lightslategray;"></h1>
     <div class="code-wrapper">
         <pre id="code"></pre>
     </div>
@@ -36,7 +42,10 @@
                             <div class="boca"></div>
                         </div>
                     </div>
-                    <div class="orelhas"></div>
+                    <div class="orelhas">
+
+                    </div>
+                    
                 </li>
                 <!-- <li class="hohoho">
                     <h2></h2>
@@ -47,12 +56,17 @@
         </div>
     </div>
     <div class="action">
-        <button data-speed='slow'>慢速</button>
-        <button data-speed='normal' class="active">中速</button>
-        <button data-speed='fast'>快速</button>
+        <button data-speed='slow' class="btn btn-primary">慢速</button>
+        <button data-speed='normal' class="active btn btn-info">中速</button>
+        <button data-speed='fast' class="btn btn-danger">快速</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='./js/main.js'></script>
+    <script>
+        var name=prompt("姓名")
+        var zhufu=document.getElementsByClassName("zhufu")[0]
+        zhufu.innerHTML=name+"圣诞快乐"
+    </script>
 </body>
 
 </html>
