@@ -1,5 +1,6 @@
-!function () {
+! function () {
   var duration = 50
+
   function writeCode(prefix, code, fn) {
     let container = document.querySelector('#code')
     let styleTag = document.querySelector('#styleTag')
@@ -161,8 +162,18 @@
       border-radius: 50%;
       animation: hoho 1.6s ease-in-out infinite alternate;
   }
-  
-  
+  .zhufuyu{
+    padding-top:15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-45deg, white, #ff8080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display:block !important;
+    
+  }
+
   /* 圣诞快乐
      ~~~~
    */
