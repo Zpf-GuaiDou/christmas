@@ -1,3 +1,10 @@
+<!--
+ * @Author: 周鹏飞
+ * @Date: 2022-04-24 09:43:24
+ * @LastEditors: 周鹏飞
+ * @LastEditTime: 2022-04-24 11:13:53
+ * @Description: file content
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,10 +16,10 @@
     <link rel="stylesheet" href="./css/animation.css">
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>圣诞快乐</title>
+        int grity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title><span class="zhufu"></span> 圣诞快乐</title>
     <style id="styleTag">
-     
+
     </style>
 </head>
 
@@ -24,6 +31,7 @@
 
     <div class="preview-wrapper">
         <div class="preview">
+            <h2 class="zhufuyu" style="text-align: center; display: none;"></h2>
             <ul>
                 <li class="hohoho">
                     <h2></h2>
@@ -45,15 +53,18 @@
                     <div class="orelhas">
 
                     </div>
-                    
+                   
                 </li>
+                
                 <!-- <li class="hohoho">
                     <h2></h2>
                     <h2></h2>
                     <h2></h2>
                 </li> -->
             </ul>
+        
         </div>
+    
     </div>
     <div class="action">
         <button data-speed='slow' class="btn btn-primary">慢速</button>
@@ -65,7 +76,11 @@
     <script>
         var name=prompt("姓名")
         var zhufu=document.getElementsByClassName("zhufu")[0]
-        zhufu.innerHTML=名字+"圣诞快乐"
+        var zhufuyu=document.getElementsByClassName("zhufuyu")[0]
+        zhufuyu.innerHTML=name+"圣诞快乐!!"
+        zhufu.innerHTML=name+"圣诞快乐"
+        
+        
     </script>
 </body>
 
